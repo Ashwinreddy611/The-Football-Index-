@@ -1,0 +1,38 @@
+/*Header Styling*/
+.header-bg {
+    background-color: #05386B;
+    padding: 30px;
+}
+
+#header {
+    color: #5CDB89;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header-bg a:hover {
+    text-decoration: none;
+}
+
+.nav {
+    background-color: #5CDB89;
+}
+
+.nav-link {
+    color: #05386B;
+    font-size: 20px;
+}
+
+.btn-select {
+    background-color: #5CDB89;
+    border-radius: 10%;
+    padding: 10px;
+    margin: 15px 22px 0px 22px;
+    border-color: white
+}
+
+/* Body Stylings */ 
+
+body { 
+    background-color: #05386B;
+}
