@@ -95,11 +95,15 @@ fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2012
     .then(response => response.text())
     .then(function (result) {
         let data2012 = JSON.parse(result);
+        let rankings = [];
         for (item of data2012.response[0].league.standings[0]) {
-            console.log(item.team.name);
-          }
+                rankings.push(item.team.name)
+                document.getElementById('league-table').innerHTML = rankings;
+        }
     })
+    
     .catch(error => console.log('error', error));
+
 //League Rankings for 2011/12
 /*fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2011", requestOptions)
     .then(response => response.text())
