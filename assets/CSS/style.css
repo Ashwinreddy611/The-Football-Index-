@@ -23,6 +23,11 @@
     font-size: 20px;
 }
 
+.buttons {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
 .btn-select {
     background-color: #5CDB89;
     border-radius: 10%;
@@ -39,6 +44,18 @@ body {
 
 #league-table{
     margin-top: 20px;
-    height: 500px;
+    height: 550px;
     background-color: white;
+}
+
+#top-scorers {
+    background-color: red;
+    height: 550px;
+    margin-top: 20px;
+}
+
+#top-assists {
+    background-color: white;
+    height: 550px;
+    margin-top: 20px;
 }
