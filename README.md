@@ -1,59 +1,38 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+#  **The Footbal Index**
 
-Welcome Ashwinreddy611,
+## **User Stories**
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+### **User Experience (UX)**
 
-## Gitpod Reminders
+#### **First Time Visitor Goals:**
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+a) As a first time visitor I would like to quickly and easily comprehend the idea the website is attempting to communicate to me.
 
-`python3 -m http.server`
+b) The website should deliver on the functionality it is promising and there should be no visual bugs that comprimise the aesthetic of the website. 
 
-A blue button should appear to click: _Make Public_,
+c) As the premise of the website is to provide information for the past eleven seasons in the premier league, as a first time user i would expect all information would be  100% accurate. 
 
-Another blue button should appear to click: _Open Browser_.
+#### **Returning Visitor Goals:**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+a) As a returning visitor I would expect updated information every year and for the current season accurate data for every game week.
 
-A blue button should appear to click: _Make Public_,
+b) When returning to the site I would expect there to be updated leagues and sections to the site i.e data from other leagues that is consistently being updated in the same way as the premier league data is being updated. 
 
-Another blue button should appear to click: _Open Browser_.
+c) Also when returning I would expect the site to maintain it's aformentioned functionality with no visual or structural bugs that would affect the newly added sectiins to the football index site.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### **Frequent Visitor Goals:** 
 
-To log into the Heroku toolbelt CLI:
+a) As a frequent visitor, I have all the expectations of a First time and returning visitor as well as the implementation of further features for the long term sustainability of the site i.e predicted line-ups for the coming game-week, betting odds at the start of the season for the winner and a player ratings system for numeric performance (accumalation of assists, goals, pass accuaracy etc.) of every player after every game. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+### **Design**
 
-## Updates Since The Instructional Video
+#### **Colour Theme** 
+* The colours chosen for *The Football Index* site are: blue, green and white. The green was chosen for its imagery of the football pitch which is the center of what *The Football Index* is about. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### **Imagery**
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+#### **Typography**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### **Wireframes**
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-Happy coding!
