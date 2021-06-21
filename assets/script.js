@@ -1,4 +1,5 @@
-//Obtaining Data from API
+//Obtaining Data from API and Creation of map and its tiles
+
 var myHeaders = new Headers();
 myHeaders.append("x-rapidapi-key", "372099cea0msh17ff944402a2d36p14f490jsnafc5c0f190af");
 myHeaders.append("x-rapidapi-host", "api-football-v1.p.rapidapi.com/v3/");
@@ -8,17 +9,25 @@ var requestOptions = {
     headers: myHeaders,
     redirect: 'follow'
 };
+
+const myMap = L.map('map').setView([52.355, 0.1], 6.4);
+const attribution = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,  Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution
+}).addTo(myMap)
+
 //League Rankings for 2020/21
+
 function getData2020() {
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2020", requestOptions)
         .then(response => response.text())
         .then(function (result) {
             let data2020 = JSON.parse(result);
             let rankings = [];
-            for (item of data2020.response[0].league.standings[0]) {
-                rankings.push(item.team.name)
+            for (var item of data2020.response[0].league.standings[0]) {
+                rankings.push(item.team.name);
             }
-            var html = "<table><tr>"
+            var html = "<table><tr>";
             var row = 1;
 
             for (i = 0; i < rankings.length; i++) {
@@ -28,12 +37,17 @@ function getData2020() {
                 if (next % row == 0 && next != rankings.length) {
                     html += "</tr><tr>";
                 }
+                
             }
             html += "</tr></table>";
             document.getElementById('league-table').innerHTML = html;
+           
+           L.marker([53.482989, -2.200292]).addTo(myMap).bindPopup("<b>Man City</b><br>47 405").openPopup();
+           
         })
+        
         .catch(error => console.log('error', error));
-
+        
 }
 let btn2020 = document.getElementById("btn-2020");
 btn2020.addEventListener('click', getData2020);
@@ -46,10 +60,10 @@ function getData2019() {
         .then(function (result) {
             let data2019 = JSON.parse(result);
             let rankings = [];
-            for (item of data2019.response[0].league.standings[0]) {
-                rankings.push(item.team.name)
+            for (var item of data2019.response[0].league.standings[0]) {
+                rankings.push(item.team.name);
             }
-            var html = "<table><tr>"
+            var html = "<table><tr>";
             var row = 1;
 
             for (i = 0; i < rankings.length; i++) {
@@ -62,6 +76,8 @@ function getData2019() {
             }
             html += "</tr></table>";
             document.getElementById('league-table').innerHTML = html;
+            
+             
         })
         .catch(error => console.log('error', error));
 
@@ -78,10 +94,10 @@ function getData2018() {
         .then(function (result) {
             let data2018 = JSON.parse(result);
             let rankings = [];
-            for (item of data2018.response[0].league.standings[0]) {
-                rankings.push(item.team.name)
+            for (var item of data2018.response[0].league.standings[0]) {
+                rankings.push(item.team.name);
             }
-            var html = "<table><tr>"
+            var html = "<table><tr>";
             var row = 1;
 
             for (i = 0; i < rankings.length; i++) {
@@ -110,10 +126,10 @@ function getData2017() {
         .then(function (result) {
             let data2017 = JSON.parse(result);
             let rankings = [];
-            for (item of data2017.response[0].league.standings[0]) {
-                rankings.push(item.team.name)
+            for (var item of data2017.response[0].league.standings[0]) {
+                rankings.push(item.team.name);
             }
-            var html = "<table><tr>"
+            var html = "<table><tr>";
             var row = 1;
 
             for (i = 0; i < rankings.length; i++) {
@@ -142,10 +158,10 @@ function getData2016() {
         .then(function (result) {
             let data2016 = JSON.parse(result);
             let rankings = [];
-            for (item of data2016.response[0].league.standings[0]) {
-                rankings.push(item.team.name)
+            for (var item of data2016.response[0].league.standings[0]) {
+                rankings.push(item.team.name);
             }
-            var html = "<table><tr>"
+            var html = "<table><tr>";
             var row = 1;
 
             for (i = 0; i < rankings.length; i++) {
@@ -173,10 +189,10 @@ function getData2015() {
         .then(function (result) {
             let data2015 = JSON.parse(result);
             let rankings = [];
-            for (item of data2015.response[0].league.standings[0]) {
-                rankings.push(item.team.name)
+            for (var item of data2015.response[0].league.standings[0]) {
+                rankings.push(item.team.name);
             }
-            var html = "<table><tr>"
+            var html = "<table><tr>";
             var row = 1;
 
             for (i = 0; i < rankings.length; i++) {
@@ -205,10 +221,10 @@ function getData2014() {
         .then(function (result) {
             let data2014 = JSON.parse(result);
             let rankings = [];
-            for (item of data2014.response[0].league.standings[0]) {
-                rankings.push(item.team.name)
+            for (var item of data2014.response[0].league.standings[0]) {
+                rankings.push(item.team.name);
             }
-            var html = "<table><tr>"
+            var html = "<table><tr>";
             var row = 1;
 
             for (i = 0; i < rankings.length; i++) {
@@ -236,10 +252,10 @@ function getData2013() {
         .then(function (result) {
             let data2013 = JSON.parse(result);
             let rankings = [];
-            for (item of data2013.response[0].league.standings[0]) {
-                rankings.push(item.team.name)
+            for (var item of data2013.response[0].league.standings[0]) {
+                rankings.push(item.team.name);
             }
-            var html = "<table><tr>"
+            var html = "<table><tr>";
             var row = 1;
 
             for (i = 0; i < rankings.length; i++) {
@@ -268,10 +284,10 @@ function getData2012() {
         .then(function (result) {
             let data2012 = JSON.parse(result);
             let rankings = [];
-            for (item of data2012.response[0].league.standings[0]) {
-                rankings.push(item.team.name)
+            for (var item of data2012.response[0].league.standings[0]) {
+                rankings.push(item.team.name);
             }
-            var html = "<table><tr>"
+            var html = "<table><tr>";
             var row = 1;
 
             for (i = 0; i < rankings.length; i++) {
@@ -300,10 +316,10 @@ function getData2011() {
         .then(function (result) {
             let data2011 = JSON.parse(result);
             let rankings = [];
-            for (item of data2011.response[0].league.standings[0]) {
-                rankings.push(item.team.name)
+            for (var item of data2011.response[0].league.standings[0]) {
+                rankings.push(item.team.name);
             }
-            var html = "<table><tr>"
+            var html = "<table><tr>";
             var row = 1;
 
             for (i = 0; i < rankings.length; i++) {
@@ -332,10 +348,10 @@ function getData2010() {
         .then(function (result) {
             let data2010 = JSON.parse(result);
             let rankings = [];
-            for (item of data2010.response[0].league.standings[0]) {
-                rankings.push(item.team.name)
+            for (var item of data2010.response[0].league.standings[0]) {
+                rankings.push(item.team.name);
             }
-            var html = "<table><tr>"
+            var html = "<table><tr>";
             var row = 1;
 
             for (i = 0; i < rankings.length; i++) {
@@ -362,3 +378,4 @@ function clearData() {
 }
 let btnClear = document.getElementById('btn-clear');
 btnClear.addEventListener('click', clearData);
+

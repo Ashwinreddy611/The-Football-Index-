@@ -18,7 +18,7 @@ a) As a returning visitor I would expect updated information every year and for 
 
 b) When returning to the site I would expect there to be updated leagues and sections to the site i.e data from other leagues that is consistently being updated in the same way as the premier league data is being updated. 
 
-c) Also when returning I would expect the site to maintain it's aformentioned functionality with no visual or structural bugs that would affect the newly added sectiins to the football index site.
+c) Also when returning I would expect the site to maintain it's aformentioned functionality with no visual or structural bugs that would affect the newly added sections to the *Football Index Site*.
 
 #### **Frequent Visitor Goals:** 
 
