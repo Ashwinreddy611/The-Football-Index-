@@ -19,6 +19,7 @@ const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 //League Rankings for 2020/21
 
 function getData2020() {
+    clearData();
     markers2020();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2020", requestOptions)
         .then(response => response.text())
@@ -54,6 +55,8 @@ btn2020.addEventListener('click', getData2020);
 //League Rankings for 2019/20
 
 function getData2019() {
+    clearData();
+    markers2019();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2019", requestOptions)
         .then(response => response.text())
         .then(function (result) {
@@ -88,6 +91,7 @@ btn2019.addEventListener('click', getData2019);
 //League Rankings for 2018/19
 
 function getData2018() {
+    markers2018();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2018", requestOptions)
         .then(response => response.text())
         .then(function (result) {
@@ -120,6 +124,7 @@ btn2018.addEventListener('click', getData2018);
 //League Rankings for 2017/18
 
 function getData2017() {
+    markers2017();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2017", requestOptions)
         .then(response => response.text())
         .then(function (result) {
@@ -152,6 +157,7 @@ btn2017.addEventListener('click', getData2017);
 //League Rankings for 2016/17
 
 function getData2016() {
+    markers2016();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2016", requestOptions)
         .then(response => response.text())
         .then(function (result) {
@@ -183,6 +189,7 @@ btn2016.addEventListener('click', getData2016);
 //League Rankings for 2015/16
 
 function getData2015() {
+    markers2015();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2015", requestOptions)
         .then(response => response.text())
         .then(function (result) {
@@ -215,6 +222,7 @@ btn2015.addEventListener('click', getData2015);
 //League Rankings for 2014/15
 
 function getData2014() {
+    markers2014();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2014", requestOptions)
         .then(response => response.text())
         .then(function (result) {
@@ -246,6 +254,7 @@ btn2014.addEventListener('click', getData2014)
 //League Rankings for 2013/14
 
 function getData2013() {
+    markers2013();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2013", requestOptions)
         .then(response => response.text())
         .then(function (result) {
@@ -278,6 +287,7 @@ btn2013.addEventListener('click', getData2013);
 //League Rankings for 2012/13
 
 function getData2012() {
+    markers2012();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2012", requestOptions)
         .then(response => response.text())
         .then(function (result) {
@@ -310,6 +320,7 @@ btn2012.addEventListener('click', getData2012);
 //League Rankings for 2011/12
 
 function getData2011() {
+    markers2011();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2011", requestOptions)
         .then(response => response.text())
         .then(function (result) {
@@ -342,6 +353,7 @@ btn2011.addEventListener('click', getData2011);
 //League Rankings for 2010/11
 
 function getData2010() {
+    markers2010();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2010", requestOptions)
         .then(response => response.text())
         .then(function (result) {
