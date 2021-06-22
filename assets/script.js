@@ -10,7 +10,7 @@ var requestOptions = {
     redirect: 'follow'
 };
 
-const myMap = L.map('map').setView([52.355, 0.1], 6.4);
+const myMap = L.map('map').setView([52.355, -2.5], 6.4);
 const attribution = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,  Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
 const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution
@@ -19,6 +19,7 @@ const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 //League Rankings for 2020/21
 
 function getData2020() {
+    markers2020();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2020", requestOptions)
         .then(response => response.text())
         .then(function (result) {
@@ -41,9 +42,7 @@ function getData2020() {
             }
             html += "</tr></table>";
             document.getElementById('league-table').innerHTML = html;
-           
-           L.marker([53.482989, -2.200292]).addTo(myMap).bindPopup("<b>Man City</b><br>47 405").openPopup();
-           
+
         })
         
         .catch(error => console.log('error', error));
