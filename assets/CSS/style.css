@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&family=Orbitron:wght@500&display=swap');
+
 /*Header Styling*/
 .header-bg {
     background-color: #05386B;
@@ -8,6 +10,8 @@
     color: #5CDB89;
     text-decoration: none;
     text-align: center;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 80px;
 }
 
 .header-bg a:hover {
@@ -21,47 +25,89 @@
 .nav-link {
     color: #05386B;
     font-size: 20px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
 }
 
 .buttons {
     margin-left: 10px;
     margin-top: 20px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
 }
 
-.btn-select {
-    background-color: #5CDB89;
-    border-radius: 10%;
-    padding: 10px;
-    margin: 15px 22px 0px 22px;
-    border-color: white
-}
 
-/* Body Stylings */ 
 
-body { 
+/* Stats Section Stylings */
+
+body {
     background-color: #05386B;
 }
 
-#league-table{
-    margin-top: 20px;
-    height: 550px;
-    background-color: white;
+.bodyTXT {
+    font-family: 'Orbitron', sans-serif;
 }
+
+#table {
+    margin-top: 20px;
+    height: 625px;
+    background-color: #05386B;
+    font-size: 20.5px;
+    color: #5CDB89;
+    padding-left: 10px;
+}
+
 
 #top-scorers {
-    background-color: red;
-    height: 550px;
-    margin-top: 20px;
+    background-color: #05386B;
+    height: 312.5px;
+    font-size: 18.5px;
+    color: #5CDB89;
+    padding: 0px;
 }
 
-#top-assists {
-    background-color: white;
-    height: 550px;
-    margin-top: 20px;
+#position-number {
+    text-align: left;
+    margin-left: 25px;
 }
 
-/*Map Stylings*/
+#position-name {
+    text-align: right;
+}
+
+#assists-number {
+    text-align: left;
+    margin-right: 25px;
+}
+
+#assists-name {
+    text-align: right;
+}
+
+
+#most-assists {
+    background-color: #05386B;
+    height: 312.5px;
+    font-size: 18.5px;
+    color: #5CDB89;
+    padding: 0px;
+}
+
 #map {
-    height: 550px;
+    height: 700px;
     margin-top: 20px;
+}
+
+/* About section stylings*/
+
+.centerAlign {
+    text-align: center;
+}
+
+#about-section {
+    height: 400px;
+    background-color:#5CDB89 ;
+    color:#05386B;
+}
+
+.subTXT {
+    font-size: 20px;
 }

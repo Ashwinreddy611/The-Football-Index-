@@ -10,16 +10,17 @@ var requestOptions = {
     redirect: 'follow'
 };
 
-const myMap = L.map('map').setView([52.355, -2.5], 6.4);
+const myMap = L.map('map').setView([52.04172, -0.75583], 6.1);
 const attribution = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,  Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
 const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution
 }).addTo(myMap)
 
+
+
 //League Rankings for 2020/21
 
 function getData2020() {
-    clearData();
     markers2020();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2020", requestOptions)
         .then(response => response.text())
