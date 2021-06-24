@@ -33,6 +33,6 @@ a) As a frequent visitor, I have all the expectations of a First time and return
 #### **Imagery**
 
 #### **Typography**
-
+In terms of typography the fonts Big Shoulders Stencil and Orbitron. *The Big Shoulder Font* was used due to it's visual connotations to tech. This fits the theme of the site of scouring the web for the data we football fans need. The *orbitron* font was used due to it's sleek and bold nature which I personally think is a very complimentary look to the *Big Shoulder Font*.
 ### **Wireframes**
-
+All wireframes used can be found [Here](/wireframes.md)

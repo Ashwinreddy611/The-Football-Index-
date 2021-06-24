@@ -43,25 +43,25 @@
         </div>
     </Header>
     <section>
-        <div class="row buttons">
-            <div class="col-sm-4 col-md-1"><button class="btn btn-outline-success" id="btn-2020">2020/21</button></div>
-            <div class="col-sm-4 col-md-1"><button class="btn btn-outline-success" id="btn-2019">2019/20</button></div>
-            <div class="col-sm-4 col-md-1"><button class="btn btn-outline-success" id="btn-2018">2018/19</button></div>
-            <div class="col-sm-4 col-md-1"><button class="btn btn-outline-success" id="btn-2017">2017/18</button></div>
-            <div class="col-sm-4 col-md-1"><button class="btn btn-outline-success" id="btn-2016">2016/17</button></div>
-            <div class="col-sm-4 col-md-1"><button class="btn btn-outline-success" id="btn-2015">2015/16</button></div>
-            <div class="col-sm-4 col-md-1"><button class="btn btn-outline-success" id="btn-2014">2014/15</button></div>
-            <div class="col-sm-4 col-md-1"><button class="btn btn-outline-success" id="btn-2013">2013/14</button></div>
-            <div class="col-sm-4 col-md-1"><button class="btn btn-outline-success" id="btn-2012">2012/13</button></div>
-            <div class="col-sm-4 col-md-1"><button class="btn btn-outline-success" id="btn-2011">2011/12</button></div>
-            <div class="col-sm-4 col-md-1"><button class="btn btn-outline-success" id="btn-2010">2010/11</button></div>
-            <div class="col-sm-4 col-md-1"><button class="btn btn-outline-success" id="btn-clear">Clear</button></div>
+        <div class="row buttons no-gutters">
+            <div class="col-sm-1"><button class="btn btn-outline-success" id="btn-2020">2020/21</button></div>
+            <div class="col-sm-1"><button class="btn btn-outline-success" id="btn-2019">2019/20</button></div>
+            <div class="col-sm-1"><button class="btn btn-outline-success" id="btn-2018">2018/19</button></div>
+            <div class="col-sm-1"><button class="btn btn-outline-success" id="btn-2017">2017/18</button></div>
+            <div class="col-sm-1"><button class="btn btn-outline-success" id="btn-2016">2016/17</button></div>
+            <div class="col-sm-1"><button class="btn btn-outline-success" id="btn-2015">2015/16</button></div>
+            <div class="col-sm-1"><button class="btn btn-outline-success" id="btn-2014">2014/15</button></div>
+            <div class="col-sm-1"><button class="btn btn-outline-success" id="btn-2013">2013/14</button></div>
+            <div class="col-sm-1"><button class="btn btn-outline-success" id="btn-2012">2012/13</button></div>
+            <div class="col-sm-1"><button class="btn btn-outline-success" id="btn-2011">2011/12</button></div>
+            <div class="col-sm-1"><button class="btn btn-outline-success" id="btn-2010">2010/11</button></div>
+            <div class="col-sm-1"><button class="btn btn-outline-success" id="btn-clear">Clear</button></div>
         </div>
         <div class="bodyTXT row">
-            <div id='table' class="col-sm-6 col-md-3 py-2 container">
+            <div id='table' class="col-sm-6 col-md-4 py-2 container">
                 <h2 class="centerAlign">Standings</h2>
                 <div class="row">
-                    <div class=" col-6 py-2">
+                    <div class="col-2 py-2">
                         <div id="position-number" class="col-12">
                             <table>
                                 <tr>
@@ -127,7 +127,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class='col-6 py-2'>
+                    <div class='col-10 py-2'>
                         <div id="position-name" class="col-12">
                             <table id='league-table'>
                                 <tr>
@@ -138,11 +138,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 my-4">
+            <div class="col-sm-6 col-md-4 my-4">
                 <div id='top-scorers' class="col-12">
                     <h2 class="centerAlign">Top scorers</h2>
-                    <div class="row">
-                        <div class="py-2">
+                    <div class="container">
+                        <div class="row">
                             <div id="scorer-number">
                                 <table>
                                     <tr>
@@ -178,7 +178,7 @@
                                 </table>
                             </div>
                             <div id="scorer-name">
-                                <table id='league-table' class="col-12">
+                                <table id='scorer-table' class="col-12">
                                     <tr class="col-12">
                                         <th></th>
                                     </tr>
@@ -189,8 +189,9 @@
                 </div>
                 <div id="most-assists" class="col-12 my-5">
                     <h2 class="centerAlign">Most Assists</h2>
-                    <div class="row">
-                        <div id="assists-number">
+                   <div class="container">
+                       <div class="row">
+                                <div id="assists-number">
                             <table>
                                 <tr>
                                     <td>1.</td>
@@ -223,11 +224,20 @@
                                     <td>10</td>
                                 </tr>
                             </table>
+                                </div>
+                    
+                            <div id="assist-name">
+                                <table id='assist-table' class="col-12">
+                                    <tr class="col-12">
+                                        <th></th>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id='map' class="col-sm-12 col-md-6">
+            <div id='map' class="col-sm-12 col-md-4">
 
             </div>
         </div>
@@ -235,22 +245,22 @@
     <section id="about-section" class="bodyTXT">
         <h1 class="centerAlign">About</h1>
         <div class="container" >
-            <div class="row centerAlign">
-                <div class="col-sm-6 subTXT">
+                <div class="col-sm-12 subTXT">
                     <h2>Who Are We?</h2>
                     <p>The Football Index is a site that was built by fans, for the fans!. We obtain the essential data all fans want to know about and format it in the best way possible so you can get what you need quickly. Our passion is football, it always has been and always will be, which means we put our all into this site. So whether you wan to reminisce about the past or see what's going on now, we have you covered!</p>
                 </div>
-                <div class="col-sm-6 centerAlign subTXT">
+                <div class="col-sm-12 subTXT">
                     <h2>What's Our Future?</h2>
                     <p>The Football Index is consistently thriving to be better and grow what we can provide our community. We aim to add more data and more genres of data for as many leagues to satisfy every football fans' every statistical desire. We aim to add some more surprise functionality with our map function so get in contact with us to set up an alert and tell us what you would like from The Football Index. </p>
                 </div>
-            </div>
+            
         </div>
     </section>
 </body>
+<script src ="assets/JS/scorers.js"></script>
 <script src = 'assets/JS/assists.js'></script>
-<script src='assets/JS/markers.js'></script>
-<script src='assets/JS/script.js'></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src ='assets/JS/markers.js'></script>
+<script src ='assets/JS/script.js'></script>
+<script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </html>

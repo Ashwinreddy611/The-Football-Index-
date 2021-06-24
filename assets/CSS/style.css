@@ -28,11 +28,13 @@
     font-family: 'Big Shoulders Stencil Display', cursive;
 }
 
-.buttons {
-    margin-left: 10px;
-    margin-top: 20px;
+.buttons > * {
     font-family: 'Big Shoulders Stencil Display', cursive;
+    display: inline-block;
+    vertical-align: middle;
 }
+
+
 
 
 
@@ -45,23 +47,20 @@ body {
 .bodyTXT {
     font-family: 'Orbitron', sans-serif;
 }
-
+/* Standings styling*/
 #table {
-    margin-top: 20px;
     height: 625px;
     background-color: #05386B;
-    font-size: 20.5px;
-    color: #5CDB89;
-    padding-left: 10px;
-}
-
-
-#top-scorers {
-    background-color: #05386B;
-    height: 312.5px;
     font-size: 18.5px;
     color: #5CDB89;
     padding: 0px;
+}
+
+
+
+#league-table {
+    font-size: 18.5px;
+ 
 }
 
 #position-number {
@@ -70,9 +69,18 @@ body {
 }
 
 #position-name {
-    text-align: right;
+    text-align: left;
+    padding-right: 0px;
 }
-
+/*Scorers stylings*/
+#top-scorers {
+    background-color: #05386B;
+    height: 312.5px;
+    font-size: 16.5px;
+    color: #5CDB89;
+    padding: 0px;
+}
+/*Assist stylings*/
 #assists-number {
     text-align: left;
     margin-right: 25px;
@@ -103,11 +111,92 @@ body {
 }
 
 #about-section {
-    height: 400px;
+    height: 500px;
     background-color:#5CDB89 ;
     color:#05386B;
 }
 
 .subTXT {
     font-size: 20px;
+}
+
+.buttons {
+    display: inline-block;
+}
+
+/* Media queries*/
+
+@media (max-width: 576px) {
+#table {
+    height: 520px;
+}
+#position-number {
+    font-size: 15px;
+}
+#position-name {
+    font-size: 15px;
+
+}
+#top-scorers{
+     height:275px;
+}
+#scorer-number {
+    padding-left: 50px;
+    font-size: 15px;
+}
+#scorer-name {
+    font-size: 15px;
+}
+#most-assists {
+    height: 250px;
+}
+
+#assists-number {
+    padding-left: 50px;
+    font-size:15px;
+}
+
+#map{
+    height: 400px;
+}
+
+#about-section{
+  height: 1200px;  
+}
+
+.buttons {
+    display: inline;
+}
+
+} 
+
+@media (max-width:778px) {
+    
+    #table h2 {
+        font-size: 25px;
+    }
+    #table {
+        font-size: 15px;
+    }
+
+    #top-scorers h2{
+        font-size: 25px;
+    }
+
+    #top-scorers {
+        font-size: 15px;
+    }
+
+    #most-assists h2 {
+        font-size: 25px;
+    
+    }
+    #most-assists {
+        font-size: 15px;
+    }
+
+    #about-section {
+        height: 600px;
+    }
+
 }

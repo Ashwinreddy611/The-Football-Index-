@@ -22,11 +22,13 @@ const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 
 function getData2020() {
     markers2020();
+    getScorers2020();
+    getAssists2020();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2020", requestOptions)
         .then(response => response.text())
         .then(function (result) {
             let data2020 = JSON.parse(result);
-            let rankings = [];
+            let rankings = []; 
             for (var item of data2020.response[0].league.standings[0]) {
                 rankings.push(item.team.name);
             }

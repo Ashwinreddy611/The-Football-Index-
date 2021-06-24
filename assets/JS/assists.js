@@ -8,28 +8,54 @@ var requestOptions = {
     redirect: 'follow'
 };
 
+function getAssists2020() {
 fetch("https://api-football-v1.p.rapidapi.com/v3/players/topassists?league=39&season=2020", requestOptions)
     .then(response => response.text())
     .then(function (result) {
         var data = JSON.parse(result);
-        // console.log(data.response[0].player)
-        let rankings = []
         var data1 = data.response;
-        console.log("data1 length", data1.length);
-        console.log("player 2", data1[2].player.name);
-        // for (var i = 0; i < data1.length; i++) {
-        //     console.log(data[i].player);
-        // }
-        for (var i of data1) {
-            console.log(i.player.name);
+        var assisters = [];
+         let i = 0
+
+    for (assist of data1) {
+      i++;
+
+      if (i === 11) {
+        break;
+    }
+      assisters.push(assist.player.name);
+    
+    }
+    var html = "<table><tr>";
+    var row = 1;
+
+    for (i = 0; i < assisters.length; i++) {
+        html += "<td>" + assisters[i] + "</td>";
+
+        var next = i + 1;
+        if (next % row == 0 && next != assisters.length) {
+            html += "</tr><tr>";
         }
         
+    }
+    html += "</tr></table>";
+    document.getElementById('assist-table').innerHTML = html;
+    
+            
+    
+})
 
-
-        //console.log(assists2020.response[0].player.name);
-    })
     .catch(err => {
         console.log(err);
     });
+}
 
-//https://api-football-v1.p.rapidapi.com/v3/
+
+    
+
+
+    
+  
+   
+
+    
