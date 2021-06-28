@@ -28,14 +28,33 @@
     font-family: 'Big Shoulders Stencil Display', cursive;
 }
 
+.jumbotron {
+    background-color: #5CDB89;
+    color: #05386B;
+}
+
+.jumbotron hr {
+    background-color: #05386B;
+}
+
+#jb-header {
+    font-family:'Big Shoulders Stencil Display', cursive;
+}
+
 .buttons > * {
     font-family: 'Big Shoulders Stencil Display', cursive;
     display: inline-block;
-    vertical-align: middle;
+   
 }
 
+.btn {
+    margin-left: 20.5px;
+    margin-top:10px;
+}
 
-
+.btn:hover {
+    background-color: #5CDB89;
+}
 
 
 /* Stats Section Stylings */
