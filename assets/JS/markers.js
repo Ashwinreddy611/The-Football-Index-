@@ -1,4 +1,13 @@
+function clearMarkers() {
+    $(".leaflet-marker-icon").remove();
+    $(".leaflet-popup").remove();
+    $(".leaflet-marker-shadow").remove();
+}
+
+
+
 function markers2020() {
+
     L.marker([53.482989, -2.200292]).addTo(myMap).bindPopup("<b>Man City</b><br> 47 405").openPopup();
     L.marker([53.463056, -2.291389]).addTo(myMap).bindPopup("<b>Man Utd</b><br> 75 811").openPopup();
     L.marker([53.430819, -2.960828]).addTo(myMap).bindPopup("<b>Liverpool</b><br> 45 276").openPopup();
@@ -250,9 +259,4 @@ function markers2010() {
     L.marker([52.475833, -1.868056]).addTo(myMap).bindPopup("<b>Birmingham</b><br> 30 079").openPopup();
     L.marker([53.804722, -3.048056]).addTo(myMap).bindPopup("<b>Blackpool</b><br> 16 220").openPopup();
     L.marker([51.538611, -0.016389]).addTo(myMap).bindPopup("<b>West Ham</b><br> 60 000").openPopup();
-}
-
-function clearMarkers() {
-    L.marker.removeLayer('marker');
-    
 }

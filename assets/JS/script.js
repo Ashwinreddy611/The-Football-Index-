@@ -58,7 +58,7 @@ btn2020.addEventListener('click', getData2020);
 //League Rankings for 2019/20
 
 function getData2019() {
-    clearData();
+    
     markers2019();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2019", requestOptions)
         .then(response => response.text())
@@ -389,6 +389,9 @@ btn2010.addEventListener('click', getData2010);
 function clearData() {
     let clear = [''];
     document.getElementById('league-table').innerHTML = clear;
+    document.getElementById('scorer-table').innerHTML = clear;
+    document.getElementById('assist-table').innerHTML = clear;
+    clearMarkers();
 }
 let btnClear = document.getElementById('btn-clear');
 btnClear.addEventListener('click', clearData);
