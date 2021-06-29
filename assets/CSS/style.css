@@ -143,6 +143,15 @@ body {
     display: inline-block;
 }
 
+/* Contact Section stylings*/
+
+#contact-section {
+    height: 500px;
+    background-color:#05386B ;
+    color:#5CDB89;
+}
+
+
 /* Media queries*/
 
 @media (max-width: 576px) {

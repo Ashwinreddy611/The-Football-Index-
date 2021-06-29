@@ -14,6 +14,13 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_41C1C2akFlKtLFUGsgB6y");
+        })();
+    </script>
 </head>
 <title>The Football Index</title>
 </head>
@@ -274,14 +281,47 @@
                     get in contact with us to set up an alert and tell us what you would like from The Football Index.
                 </p>
             </div>
-
+        </div>
+    </section>
+    <section id="contact-section" class="bodyTXT">
+        <div class="container">
+            <h2 class="centerAlign">Contact Us</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <form onsubmit="return sendMail(this)";>
+                        <div class="form-group">
+                            <label for="formName">Name</label>
+                            <input type="name" name="name" class="form-control" id="formName"
+                                placeholder="Cristiano Ronaldo">
+                        </div>
+                        <div class="form-group">
+                            <label for="formEmail">Email address</label>
+                            <input type="email" name="email" class="form-control" id="formEmail"
+                                aria-describedby="emailHelp" placeholder="ronaldo@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="formTextArea">Your Message For Us</label>
+                            <textarea class="form-control" name = "formMessage" id="formTextArea" rows="5"></textarea>
+                          </div>
+                        <button type="submit" class="btn btn-outline-success">Submit</button>
+                    </form>
+                </div>
+                <div class="col-sm-6 subTXT">
+                    <p>
+                        Here at The Football Index is a community, from the team constantly thriving to maintain and
+                        improve the site to our users who have formed the TFI family. We want to hear what you have to
+                        say, from features you would like to see to general thoughts of the site, we want to know!
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 </body>
-<script src="assets/JS/scorers.js"></script>
+<script src='assets/JS/scorers.js'></script>
 <script src='assets/JS/assists.js'></script>
 <script src='assets/JS/markers.js'></script>
 <script src='assets/JS/script.js'></script>
+<script src='assets/JS/contact.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </html>
