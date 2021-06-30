@@ -109,7 +109,6 @@ body {
     text-align: right;
 }
 
-
 #most-assists {
     background-color: #05386B;
     height: 312.5px;
@@ -151,9 +150,7 @@ body {
     color:#5CDB89;
 }
 
-
 /* Media queries*/
-
 
 @media (max-width: 576px) {
 #table {

@@ -78,7 +78,7 @@ b) The website should deliver on the functionality it is promising and there sho
 
     i. When the user clicks on the button relevent to the season they arre after the league standings, top scorers and top assists are obtained and formatted onto the page correctly. As well as this the map correclty displays corresponding markers to the teams within the league in that season. 
 
-c) As the premise of the website is to provide information for the past eleven seasons in the premier league, as a first time user I would expect all information would be  100% accurate.
+c) As the premise of the website is to provide information for the past seven seasons in the premier league, as a first time user I would expect all information would be  100% accurate.
 
     i. The information is all accurate and has been indpendently verified using multiple sources of information pertinent to the statistics being presented. Some of the resources used for the verification are: wikipedia, google and the premier league app/website. 
 
