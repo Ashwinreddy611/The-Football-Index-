@@ -20,15 +20,14 @@ const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 let btn = document.querySelectorAll('.btnData');
 for (var i = 0; i < btn.length; i++) {
     btn[i].addEventListener('click', getStandings);
-    //btn[i].addEventListener('click', getScorers);
-    //btn[i].addEventListener('click', getAssists);
-    
+    btn[i].addEventListener('click', getAssists);
+    btn[i].addEventListener('click', getScorers);
 }
 
 
 
 function getStandings() {
-    const myDate = this.dataset.year;
+    let myDate = this.dataset.year;
     fetch(`https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=${myDate}`, requestOptions)
         .then(response => response.text())
         .then(function (result) {
@@ -56,6 +55,7 @@ function getStandings() {
 
 
 function getScorers() {
+    let myDate = this.dataset.year;
     fetch(`https://api-football-v1.p.rapidapi.com/v3/players/topscorers?season=${myDate}&league=39`, requestOptions)
         .then(response => response.text())
         .then(function (result) {
@@ -89,6 +89,7 @@ function getScorers() {
 }
 
 function getAssists() {
+    let myDate = this.dataset.year;
     fetch(`https://api-football-v1.p.rapidapi.com/v3/players/topassists?league=39&season=${myDate}`, requestOptions)
         .then(response => response.text())
         .then(function (result) {
@@ -128,28 +129,3 @@ function clearData() {
 let btnClear = document.getElementById('btn-clear');
 btnClear.addEventListener('click', clearData);
 
-function markersDetermine() {
-    if (myDate === 2020) {
-        markers2020();
-    } else if (myDate === 2019) {
-        markers2019();
-    } else if (myDate === 2018) {
-        markers2018();
-    } else if (myDate === 2017) {
-        markers2017();
-    } else if (myDate === 2016) {
-        markers2016();
-    } else if (myDate === 2015) {
-        markers2015();
-    } else if (myDate === 2014) {
-        markers2014();
-    } else if (myDate === 2013) {
-        markers2013();
-    } else if (myDate === 2012) {
-        markers2012();
-    } else if (myDate === 2011) {
-        markers2011();
-    } else if (myDate === 2010) {
-        markers2010();
-    }
-}

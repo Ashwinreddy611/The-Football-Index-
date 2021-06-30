@@ -110,6 +110,8 @@ a) As a frequent visitor, I have all the expectations of a First time and return
 i. There are no errors in the HTML. The link to the validator can be found [Here](https://validator.w3.org/nu/). 
 
 ii. There are no errors in the CSS. The link to the validator can be found [Here](https://jigsaw.w3.org/css-validator/).
+
+iii. There are no errors in the JS. The link to the validator can be found [Here](https://jshint.com/).
 #### **Header**
 i. The Logo is formatted properly to take up 100% of the width on all the screen sized and when clicked refreshes the page as this is a single page website. 
 #### **Nav Bar**
