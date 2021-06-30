@@ -16,20 +16,24 @@ const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
     attribution
 }).addTo(myMap)
 
+//obtaining the year and storing it in a variable 
+let btn = document.querySelectorAll('.btnData');
+
+for (var i = 0; i < btn.length; i++) {
+    btn[i].addEventListener('click', getData());
+    myDate = this.dataset.year;
+    console.log(myData);
+    }
 
 
-//League Rankings for 2020/21
-
-function getData2020() {
-    markers2020();
-    getScorers2020();
-    getAssists2020();
-    fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2020", requestOptions)
+function getData() {
+   
+    fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=${myDate}", requestOptions)
         .then(response => response.text())
         .then(function (result) {
-            let data2020 = JSON.parse(result);
-            let rankings = []; 
-            for (var item of data2020.response[0].league.standings[0]) {
+            let data = JSON.parse(result);
+            let rankings = [];
+            for (var item of data.response[0].league.standings[0]) {
                 rankings.push(item.team.name);
             }
             var html = "<table><tr>";
@@ -42,22 +46,24 @@ function getData2020() {
                 if (next % row == 0 && next != rankings.length) {
                     html += "</tr><tr>";
                 }
-                
+
             }
             html += "</tr></table>";
             document.getElementById('league-table').innerHTML = html;
 
         })
-        
         .catch(error => console.log('error', error));
-        
 }
-let btn2020 = document.getElementById("btn-2020");
-btn2020.addEventListener('click', getData2020);
 
+/*let btn2020 = document.getElementById("btn2020");
+btn2020.addEventListener('click', getData2020);*/
+
+
+//getScorers2020();
+//getAssists2020();
 //League Rankings for 2019/20
 
-function getData2019() {
+/*function getData2019() {
     
     markers2019();
     fetch("https://api-football-v1.p.rapidapi.com/v3/standings?league=39&season=2019", requestOptions)
@@ -394,5 +400,4 @@ function clearData() {
     clearMarkers();
 }
 let btnClear = document.getElementById('btn-clear');
-btnClear.addEventListener('click', clearData);
-
+btnClear.addEventListener('click', clearData);*/

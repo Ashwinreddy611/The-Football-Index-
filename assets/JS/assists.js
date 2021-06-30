@@ -15,7 +15,7 @@ fetch("https://api-football-v1.p.rapidapi.com/v3/players/topassists?league=39&se
         var data = JSON.parse(result);
         var data1 = data.response;
         var assisters = [];
-         let i = 0
+        let i = 0
 
     for (assist of data1) {
       i++;
