@@ -154,6 +154,7 @@ body {
 
 /* Media queries*/
 
+
 @media (max-width: 576px) {
 #table {
     height: 520px;
@@ -189,7 +190,7 @@ body {
 }
 
 #about-section{
-  height: 1200px;  
+  height: 1200px; 
 }
 
 .buttons {
@@ -199,7 +200,6 @@ body {
 } 
 
 @media (max-width:778px) {
-    
     #table h2 {
         font-size: 25px;
     }
@@ -224,7 +224,15 @@ body {
     }
 
     #about-section {
-        height: 600px;
+        height: 1150px;
+    }
+
+    .subTXT {
+        font-size: 18px;
+    }
+
+    #league-table, #scorer-table, #assist-table {
+        font-size : 15px;
     }
 
 }

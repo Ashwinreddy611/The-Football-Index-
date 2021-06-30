@@ -4,8 +4,6 @@ function clearMarkers() {
     $(".leaflet-marker-shadow").remove();
 }
 
-
-
 function markers2020() {
     L.marker([53.482989, -2.200292]).addTo(myMap).bindPopup("<b>Man City</b><br> 47,405").openPopup();
     L.marker([53.463056, -2.291389]).addTo(myMap).bindPopup("<b>Man Utd</b><br> 75,811").openPopup();

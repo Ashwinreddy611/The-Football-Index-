@@ -107,26 +107,48 @@ a) As a frequent visitor, I have all the expectations of a First time and return
 
 ### **Testing of Individual Components
 #### **HTML and CSS validators**
-    i. There are not errors in the HTML. The link to the Validator can be found [Here](https://validator.w3.org/nu/). 
+i. There are no errors in the HTML. The link to the validator can be found [Here](https://validator.w3.org/nu/). 
+
+ii. There are no errors in the CSS. The link to the validator can be found [Here](https://jigsaw.w3.org/css-validator/).
 #### **Header**
-    i. The Logo is formatted properly to take up 100% of the width on all the screen sized and when clicked refreshes the page as this is a single page website. 
+i. The Logo is formatted properly to take up 100% of the width on all the screen sized and when clicked refreshes the page as this is a single page website. 
 #### **Nav Bar**
-    i. The Nav Bar, when the individual components are clicked take the user to the relevant section of the site. The nav bar stays the same format on all other screen sizes and is not distorted in any way. 
+i. The Nav Bar, when the individual components are clicked take the user to the relevant section of the site. The nav bar stays the same format on all other screen sizes and is not distorted in any way. 
 
-    ii. The hover elements are fully functioning when a mouse is hovering over the individual components. This function doesn't accompany the touch screens as you can not hover a mouse when on a touch screen device. 
+ii. The hover elements are fully functioning when a mouse is hovering over the individual components. This function doesn't accompany the touch screens as you can not hover a mouse when on a touch screen device. 
 #### **Hero Info Section**
-
+i. The Hero Info section stays looking very aesthetically pleasing on all screen sizes and scales up and down very well.
 #### **Season Buttons**
+i. On the larger screen sizes the buttons keep they're alignment and keep their structure in doing so keep this section of the page organised and clean. 
 
+ii. On smaller screens the buttons can be misaligned and this well be mentioned in the known bugs section also.
+
+iii. The text within each button stays clean and non-comppressed/distorted at all screen sizes. 
+
+iv. When each button is clicked they work perfectly in triggering the API call to the server and retrieveing the relevent information to be inputted into the statistics section. The clear button subsequently works very well to clear the statistics section so a new button can now be clicked and new information obtained. 
 #### **Statistics Section**
-
+i. On all screen sizes the iformation stays looking very aesthetic and clean. The sections do not distort at the lower screen sizes. 
 #### **Map**
+i. On all screen sizes the map is sizeable, isn't distorted and takes up the intended amount of space on the site.
 
+ii. The markers on the map are fully functional dropping when the user clicks the desired season button and is removed correctly when the clear button is clicked. 
+
+iii. The markers when clicked show the name of the stadium it is marking as well as the capacity of the stadium. 
 #### **About Section**
-
+i. On all screen sizes this section keeps its aesthetic nature, text is not compressed/distorted and the two sections are always on top of each other as intended. 
 #### **Contact Form**
+i. The contact form is fully functional and when the user fills out all the fields (they are all required) and clicks submit an email is sent to me @ ashwinreddy6@gmail.com in that email I am able to view the name filled out, the email address sending the email and the accompanying message the user has sent. 
+
+ii. The accompanying text in the contact section is always clean on all screen sizes and doesn't interfere with the contact view whilst providing valuable information. 
+
 
 ## **Known Bugs**
+i. On all screen sizes the site has some overflow on the right hand side of the page.
+
+ii. On the small phone screens the buttons (more precisely the first two) are out of alignment with the other buttons. 
+
+iii. On the pixel phones and the iPhone 6 and above the about section is too large however this can not be fixed without compressing and cutting off text on the iPhone 5 view . 
+
 
 ## **Deployment**
 GitHub Pages was used for the deployment of *The Football Index* Website
