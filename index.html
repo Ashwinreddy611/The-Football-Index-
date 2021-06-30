@@ -14,15 +14,14 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
-    <script type="text/javascript">
+    <script>
         (function () {
             emailjs.init("user_41C1C2akFlKtLFUGsgB6y");
         })();
     </script>
-</head>
-<title>The Football Index</title>
+<title>The Football Index</title>    
 </head>
 
 <body>
@@ -53,7 +52,7 @@
     <section>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4" id="jb-header">Made By Fans, For The Fans</h1>
+                <h2 class="display-4" id="jb-header">Made By Fans, For The Fans</h2>
                 <hr>
                 <p class="lead bodyTXT">The Football Index sifts through all the statistical fog in football to deliver
                     you what you want to know, all at the click of a button. Simply click the desired season for the
@@ -66,13 +65,13 @@
         <div class="mx-2"><button class="btn btn-outline-success btnData" data-year="2019" id="btn2019">2019/20</button></div>
         <div class="mx-2"><button class="btn btn-outline-success btnData" data-year="2018" id="btn2018">2018/19</button></div>
         <div class="mx-2"><button class="btn btn-outline-success btnData" data-year="2017" id="btn2017">2017/18</button></div>
-        <div class="mx-2"><button class="btn btn-outline-success btnData" date-year="2016" id="btn2016">2016/17</button></div>
-        <div class="mx-2"><button class="btn btn-outline-success btnData" date-year="2015" id="btn2015">2015/16</button></div>
-        <div class="mx-2"><button class="btn btn-outline-success btnData" date-year="2014" id="btn2014">2014/15</button></div>
-        <div class="mx-2"><button class="btn btn-outline-success btnData" date-year="2013" id="btn2013">2013/14</button></div>
-        <div class="mx-2"><button class="btn btn-outline-success btnData" date-year="2012" id="btn2012">2012/13</button></div>
-        <div class="mx-2"><button class="btn btn-outline-success btnData" date-year="2011" id="btn2011">2011/12</button></div>
-        <div class="mx-2"><button class="btn btn-outline-success btnData" date-year="2010" id="btn2010">2010/11</button></div>
+        <div class="mx-2"><button class="btn btn-outline-success btnData" data-year="2016" id="btn2016">2016/17</button></div>
+        <div class="mx-2"><button class="btn btn-outline-success btnData" data-year="2015" id="btn2015">2015/16</button></div>
+        <div class="mx-2"><button class="btn btn-outline-success btnData" data-year="2014" id="btn2014">2014/15</button></div>
+        <div class="mx-2"><button class="btn btn-outline-success btnData" data-year="2013" id="btn2013">2013/14</button></div>
+        <div class="mx-2"><button class="btn btn-outline-success btnData" data-year="2012" id="btn2012">2012/13</button></div>
+        <div class="mx-2"><button class="btn btn-outline-success btnData" data-year="2011" id="btn2011">2011/12</button></div>
+        <div class="mx-2"><button class="btn btn-outline-success btnData" data-year="2010" id="btn2010">2010/11</button></div>
         <div><button class="btn btn-outline-success" id="btn-clear">Clear</button></div>
     </div>
     <section>
@@ -262,7 +261,7 @@
         </div>
     </section>
     <section id="about-section" class="bodyTXT">
-        <h1 class="centerAlign">About</h1>
+        <h2 class="centerAlign">About</h2>
         <div class="container">
             <div class="col-sm-12 subTXT">
                 <h2>Who Are We?</h2>
@@ -287,16 +286,16 @@
             <h2 class="centerAlign">Contact Us</h2>
             <div class="row">
                 <div class="col-sm-6">
-                    <form onsubmit="return sendMail(this)";>
+                    <form onsubmit="return sendMail(this)">
                         <div class="form-group">
                             <label for="formName">Name</label>
-                            <input type="name" name="name" class="form-control" id="formName"
+                            <input type="text" name="name" class="form-control" id="formName"
                                 placeholder="Cristiano Ronaldo" required>
                         </div>
                         <div class="form-group">
                             <label for="formEmail">Email address</label>
                             <input type="email" name="email" class="form-control" id="formEmail"
-                                aria-describedby="emailHelp" placeholder="ronaldo@gmail.com" required>
+                                aria-describedby ="formEmail" placeholder="ronaldo@gmail.com" required>
                         </div>
                         <div class="form-group">
                             <label for="formTextArea">Your Message For Us</label>
@@ -315,12 +314,11 @@
             </div>
         </div>
     </section>
-</body>
 <script src='assets/JS/scorers.js'></script>
 <script src='assets/JS/assists.js'></script>
 <script src='assets/JS/markers.js'></script>
 <script src='assets/JS/script.js'></script>
 <script src='assets/JS/contact.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+</body>
 </html>

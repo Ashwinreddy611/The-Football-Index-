@@ -106,7 +106,27 @@ a) As a frequent visitor, I have all the expectations of a First time and return
     i. As mentioned in the previous points new features and a consistent presentation is promised. The team here at *The Football Index* are determined to grow and increase what we offer. The site is still in it's infancy but rest assured the growth will be exponential in the near future. 
 
 ### **Testing of Individual Components
+#### **HTML and CSS validators**
+    i. There are not errors in the HTML. The link to the Validator can be found [Here](https://validator.w3.org/nu/). 
+#### **Header**
+    i. The Logo is formatted properly to take up 100% of the width on all the screen sized and when clicked refreshes the page as this is a single page website. 
+#### **Nav Bar**
+    i. The Nav Bar, when the individual components are clicked take the user to the relevant section of the site. The nav bar stays the same format on all other screen sizes and is not distorted in any way. 
 
+    ii. The hover elements are fully functioning when a mouse is hovering over the individual components. This function doesn't accompany the touch screens as you can not hover a mouse when on a touch screen device. 
+#### **Hero Info Section**
+
+#### **Season Buttons**
+
+#### **Statistics Section**
+
+#### **Map**
+
+#### **About Section**
+
+#### **Contact Form**
+
+## **Known Bugs**
 
 ## **Deployment**
 GitHub Pages was used for the deployment of *The Football Index* Website
